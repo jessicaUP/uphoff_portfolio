@@ -14,6 +14,16 @@ body {
   left: 0; */
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  width: 100%;
+  max-width: unset;
+  padding: 0 110px;
+}
+
 .background {
   background-image: url('img/background.png');
   background-position: center center;
@@ -125,7 +135,7 @@ p {
   /* padding-left: 8vw; */
   /* align-items: right; */
   /* margin-left: 100px; */
-  width: 85%;
+  width: 100%;
   margin: 0;
   padding: 20px;
   margin-right: 7vw;
@@ -187,8 +197,10 @@ p {
 
 .project-desc {
   display: none;
-  font-size: 13px;
   text-align: right;
+  margin: 8px 0;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 .project-desc-clicked {
@@ -203,7 +215,7 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0 10px;
   width: 40vw;
 
@@ -219,9 +231,9 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  position: absolute;
+  /* position: absolute;
   bottom: -50px;
-  right: 5px;
+  right: 5px; */
 
   /* margin-bottom: 10px; */
 }
@@ -229,7 +241,7 @@ p {
 .tech-list {
   display: none;
   position: absolute;
-  top: -30px;
+  top: -80px;
   right: 10px;
   /* display: flex; */
   flex-direction: column;
@@ -408,6 +420,8 @@ p {
 
 .clicked-project-body {
   justify-content: flex-end;
+  position: relative;
+  bottom: -45px;
 }
 
 .icons {
