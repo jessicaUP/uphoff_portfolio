@@ -25,7 +25,7 @@ let fluxImage = document.querySelector('.flux-image');
 let fluxDesc = document.querySelector('#flux-desc');
 let fluxList = document.querySelector('#flux-tech');
 
-let jessImage = document.querySelector('.about-circle');
+let jessImage = document.querySelector('.image-circle');
 let jessResume = document.querySelector('.resume-image');
 
 function randomColor() {

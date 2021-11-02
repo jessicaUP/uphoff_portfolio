@@ -2,7 +2,7 @@
 
 body {
   position: absolute;
-  background-color: rgb(255, 255, 103);
+  background-color: rgb(138, 255, 210);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -25,10 +25,10 @@ section {
 }
 
 .background {
-  background-image: url('img/background.png');
+  background-image: url('img/background3.png');
   background-position: center center;
   /* mix-blend-mode: multiply; */
-  filter: opacity(80%);
+  filter: opacity(100%);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -65,13 +65,30 @@ img {
 }
 
 p {
+  /* font-weight: bolder; */
+  /* margin: 0 0 20px 5px; */
+  font-size: 14px;
+  color: black;
   margin: 0;
   font-family: 'Barlow Condensed', sans-serif;
+} 
+
+li {
+  font-size: 14px;
+  color: black;
+  /* margin: 15px 0 10px 5px; */
 }
+    
+.sub-li {
+  margin-left: 25px;
+  font-size: 12px;
+}
+
+
 
 .logo {
   background-image: url('img/jessLogo.png');
-  background-color: rgb(255, 255, 103);
+  /* background-color: rgb(255, 255, 103); */
   width: 20vw;
   padding-top: 28.78%;
   background-position: center center;
@@ -108,8 +125,15 @@ p {
 .nav-link {
   color: black;
   font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
   padding: 0;
   padding-left: 30px;
+}
+
+.nav-link:hover {
+  color: black;
+  font-size: 25px;
+  filter: drop-shadow(0 0 5px white);
 }
 
 .nav-items {
@@ -153,6 +177,10 @@ p {
   margin: 0 4px;
 }
 
+.btn-edge {
+  margin: 0;
+}
+
 /*  PROJECT IMAGES  */ 
 
 .image-div {
@@ -170,7 +198,7 @@ p {
   height: auto;
   /* height: 0;
   padding-top: 69.97%; */
-  box-shadow: 0 0 50px #ccc;
+  box-shadow: 0 0 50px rgb(159, 159, 159);
   /* border: 1px solid black; */
 }
 
@@ -196,9 +224,12 @@ p {
 }
 
 .project-desc {
+  color: black;
+  background-color: rgba(255, 255, 255, .6);
   display: none;
   text-align: right;
   margin: 8px 0;
+  padding: 2px;
   font-size: 13px;
   line-height: 15px;
 }
@@ -261,11 +292,16 @@ p {
   width: 100%;
   margin: 0;
   text-align: right;
-  color: rgb(255, 255, 103);
+  color: rgb(255, 187, 222);
+  /* color: rgb(247, 205, 115); */
 }
 
 .jess-title {
   margin: 0;
+}
+
+.jess-desc {
+  color: black;
 }
 
 .about-me {
@@ -285,15 +321,19 @@ p {
   justify-content: center;
 }
 
+#resume {
+  padding: 0 40px 0 100px;
+}
+
 .resume-image {
   display: none;
   background-image: url('img/uphoff_resume.jpg');
   background-position: center center;
-  background-size: cover;
-  /* mix-blend-mode: multiply; */
   background-size: contain;
+  /* mix-blend-mode: multiply; */
+  /* background-size: contain; */
   background-repeat: no-repeat;
-  width: 93.75%;
+  width: 100%;
   padding-top: 100%;
   z-index: 5;
   /* padding-right: 10px; */
@@ -320,10 +360,10 @@ p {
 }
 
 .image-circle {
+  background-image: url('img/headshotBW.jpeg');
+  /* background-color: rgb(247, 205, 115); */
   background-size: cover;
   mix-blend-mode: multiply;
-
-  background-image: url('img/headshotBW.jpeg');
   border-radius: 100%;
   width: 20vw;
   height: 20vw;
@@ -331,6 +371,20 @@ p {
   /* position: absolute;
   right: 20px;
   top: 50px; */
+}
+
+.about-circle {
+  background-color: rgba(255, 255, 255, .5);
+  /* mix-blend-mode: multiply; */
+  position: absolute;
+  top: 0;
+  left: 14vw;
+  border-radius: 100%;
+  width: 20vw;
+  height: 20vw;
+  margin: 2vw;
+  filter: blur(20px);
+  z-index: -1;
 }
 
 .image-circle:hover {
@@ -453,6 +507,8 @@ p {
 
 .icon-jess:hover .icon-text {
   color: black;
+  font-size: 12px;
+  font-weight: bold;
   display: flex;
 }
 
@@ -485,4 +541,46 @@ p {
   align-items:  right;
   justify-content: center;
 }
+
+.footer-cont {
+  position: relative;
+  top: 130px;
+  /* // bottom: 300px;
+  // right: 0;
+  // left: 0;
+  // width: 100%; */
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  background-color: rgba(43, 52, 62, .03); 
+  text-justify: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 20px;
+}
+
+.footer-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr .75fr;
+  grid-auto-flow: row;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.about-group {
+  padding: 15px;
+}
+
+/* #about {
+  background-color: rgba(255, 255, 255, .3);
+  box-shadow: 0 0 50px rgba(255, 255, 255, .3);
+} */
+
+
+
+
+
 
