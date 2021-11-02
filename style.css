@@ -140,26 +140,28 @@ p {
 .btn {
   background-color: unset;
   border: 4px solid white;
-  margin: 4px;
+  margin: 0 4px;
 }
 
 /*  PROJECT IMAGES  */ 
 
-/* .image-div {
+.image-div {
   width: 50%;
   height: fit-content;
-  padvding-top: 19.98vw;
-} */
+  /* padding-top: 19.98vw; */
+}
 
 .background-image {
   /* background-position: center center; */
   mix-blend-mode: multiply;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 50%;
+  width: 100%;
   height: auto;
-  padding-top: 19.98vw;
-  border: 1px solid black;
+  /* height: 0;
+  padding-top: 69.97%; */
+  box-shadow: 0 0 50px #ccc;
+  /* border: 1px solid black; */
 }
 
 /* .navbar {
@@ -180,6 +182,7 @@ p {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 100;
   color: black;
+  margin: 0;
 }
 
 .project-desc {
@@ -201,7 +204,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 10px;
+  padding: 0 10px;
   width: 40vw;
 
 }
@@ -216,17 +219,23 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-bottom: 40px;
+  position: absolute;
+  bottom: -50px;
+  right: 5px;
+
+  /* margin-bottom: 10px; */
 }
 
 .tech-list {
   display: none;
   position: absolute;
-  top: 50px;
+  top: -30px;
   right: 10px;
   /* display: flex; */
   flex-direction: column;
   margin: 0;
+  background-color: black;
+  padding: 5px;
 }
 
 .clicked-list {
@@ -235,10 +244,12 @@ p {
 
 .tech-item {
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 14px;
   width: 100%;
   margin: 0;
   text-align: right;
+  color: rgb(255, 255, 103);
 }
 
 .jess-title {
@@ -251,6 +262,7 @@ p {
   flex-direction: row;
   justify-content: right;
   width: 100%;
+  margin: 100px 0;
 }
 
 .about-body {
@@ -322,12 +334,12 @@ p {
 }
 
 .wearby-image {
-  background-image: url('img/wearbyBW.png');
+  content: url('img/wearbyBW.png');
   /* padding-top: 17.56%; */
 }
 
 .wearby-image:hover {
-  background-image: url('img/wearbyColor.png');
+  content: url('img/wearbyColor.png');
   mix-blend-mode: normal;
 }
 
@@ -336,12 +348,12 @@ p {
 } */
 
 .dull-image {
-  background-image: url('img/dullBW.png');
+  content: url('img/dullBW.png');
   /* padding-top: 34.71%; */
 }
 
 .dull-image:hover {
-  background-image: url('img/dullColor.png');
+  content: url('img/dullColor.png');
   mix-blend-mode: normal;
 }
 
@@ -350,39 +362,52 @@ p {
 } */
 
 .flux-image {
-  background-image: url('img/fluxBW.png');
+  content: url('img/fluxBW.png');
   /* padding-top: 34.81%; */
 }
 
 .flux-image:hover {
-  background-image: url('img/fluxColor.png');
+  content: url('img/fluxColor.png');
   mix-blend-mode: normal;
 }
 
 
 .dull-clicked-image {
-  width: 150%;
-  padding-top: 55.53%;
+  /* width: 120%; */
   mix-blend-mode: normal;
-  background-image: url('img/dullGif.gif');
+  content: url('img/dullGif.gif');
 }
 
 .dull-clicked-image:hover {
-  background-image: url('img/dullGif.gif');
+  content: url('img/dullGif.gif');
 }
 
 .wearby-clicked-image {
-  width: 80%;
-  padding-top: 40.14%;
+  width: 100%;
   mix-blend-mode: normal;
-  background-image: url('img/wearbyGif.gif');
+  content: url('img/wearbyGif.gif');
+}
+
+.wearby-clicked-image:hover {
+  content: url('img/wearbyGif.gif');
 }
 
 .flux-clicked-image {
-  width: 80%;
-  padding-top: 47.63%;
+  width: 100%;
   mix-blend-mode: normal;
-  background-image: url('img/fluxGif.gif');
+  content: url('img/fluxGif.gif');
+}
+
+.flux-clicked-image:hover {
+  content: url('img/fluxGif.gif');
+}
+
+.clicked-image {
+  width: 100%;
+}
+
+.clicked-project-body {
+  justify-content: flex-end;
 }
 
 .icons {

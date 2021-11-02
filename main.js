@@ -5,16 +5,22 @@ let body = document.querySelector('body');
 // body.style['background-color'] = 'rgb(255, 204, 0)';
 
 let wearbyProject = document.querySelector('#wearby-project');
+let wearbyBody = document.querySelector('.wearby-project-body');
+let wearbyImageCont = document.querySelector('.wearby-image-cont');
 let wearbyImage = document.querySelector('.wearby-image');
 let wearbyDesc = document.querySelector('#wearby-desc');
 let wearbyList = document.querySelector('#wearby-tech');
 
 let dullProject = document.querySelector('#dull-project');
+let dullBody = document.querySelector('.dull-project-body');
+let dullImageCont = document.querySelector('.dull-image-cont');
 let dullImage = document.querySelector('.dull-image');
 let dullDesc = document.querySelector('#dull-desc');
 let dullList = document.querySelector('#dull-tech');
 
 let fluxProject = document.querySelector('#flux-project');
+let fluxBody = document.querySelector('.flux-project-body');
+let fluxImageCont = document.querySelector('.flux-image-cont');
 let fluxImage = document.querySelector('.flux-image');
 let fluxDesc = document.querySelector('#flux-desc');
 let fluxList = document.querySelector('#flux-tech');
@@ -28,20 +34,22 @@ function randomColor() {
   return color;
 }
 
-function addProject(project, list, desc, image, imageClass) {
+function addProject(project, projectBody, list, desc, image, imageClass, imageCont = false) {
 
   return () => {
 
     project.classList.toggle('clicked-project');
+    projectBody.classList.toggle('clicked-project-body');
     image.classList.toggle(imageClass);
     desc.classList.toggle('project-desc-clicked');
     list.classList.toggle('clicked-list');
+    if (imageCont) imageCont.classList.toggle('clicked-image');
   }
 }
 
-wearbyProject.addEventListener('click', addProject(wearbyProject, wearbyList, wearbyDesc, wearbyImage, 'wearby-clicked-image'));
-dullProject.addEventListener('click', addProject(dullProject, dullList, dullDesc, dullImage, 'dull-clicked-image'));
-fluxProject.addEventListener('click', addProject(fluxProject, fluxList, fluxDesc, fluxImage, 'flux-clicked-image'));
+wearbyProject.addEventListener('click', addProject(wearbyProject, wearbyBody, wearbyList, wearbyDesc, wearbyImage, 'wearby-clicked-image', wearbyImageCont));
+dullProject.addEventListener('click', addProject(dullProject, dullBody, dullList, dullDesc, dullImage, 'dull-clicked-image', dullImageCont));
+fluxProject.addEventListener('click', addProject(fluxProject, fluxBody, fluxList, fluxDesc, fluxImage, 'flux-clicked-image', fluxImageCont));
 jessImage.addEventListener('click', () => {
   jessImage.classList.toggle('jess-image-clicked');
   jessResume.classList.toggle('jess-clicked');
