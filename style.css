@@ -463,7 +463,7 @@ li {
 .flux-clicked-image {
   width: 100%;
   mix-blend-mode: normal;
-  content: url('img/wearbyGif1.gif');
+  content: url('img/fluxGif.gif');
 }
 
 .flux-clicked-image:hover {
