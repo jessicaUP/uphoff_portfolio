@@ -62,6 +62,7 @@ h2, .h2 {
 
 img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 p {
@@ -362,6 +363,7 @@ li {
 }
 
 .image-circle {
+  cursor: pointer;
   background-image: url('img/headshotBW.jpeg');
   /* background-color: rgb(247, 205, 115); */
   background-size: cover;
