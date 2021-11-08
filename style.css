@@ -330,14 +330,15 @@ li {
 
 .resume-image {
   display: none;
-  background-image: url('img/uphoff_resume.png');
+  content: url('img/uphoff_resume.png');
   background-position: center center;
   background-size: contain;
   /* mix-blend-mode: multiply; */
   /* background-size: contain; */
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 100%;
+  margin-top: 10px;
+  /* padding-top: 100%; */
   z-index: 5;
   /* padding-right: 10px; */
 
