@@ -330,7 +330,7 @@ li {
 
 .resume-image {
   display: none;
-  background-image: url('img/uphoff_resume.jpg');
+  background-image: url('img/uphoff_resume.png');
   background-position: center center;
   background-size: contain;
   /* mix-blend-mode: multiply; */
